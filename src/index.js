@@ -1,13 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import AppRoutes from './Routes';
 import { Provider } from "./components/ui/provider"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-        <Provider>
-            <React.StrictMode>
-                <App />
-            </React.StrictMode>
-        </Provider>
+    <HashRouter basename="/portfolio">
+    <Provider>
+      <React.StrictMode>
+        <AppRoutes />  
+      </React.StrictMode>
+    </Provider>
+  </HashRouter>
 );

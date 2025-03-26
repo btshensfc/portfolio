@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add these 3 meta tags -->
+    <base href="%PUBLIC_URL%/">
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self' data:; 
+             script-src 'self' 'unsafe-inline' https://btshensfc.github.io; 
+             style-src 'self' 'unsafe-inline';">
+    <meta name="theme-color" content="#000000" />
+    
     <title>React Portfolio</title>
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="%PUBLIC_URL%/static/css/main.css" as="style">
   </head>
   <body>
     <div id="root"></div>
+    <!-- Add 404 fallback script for GitHub Pages SPA -->
+    <script>
+      if(window.location.pathname.includes('/portfolio')) {
+        sessionStorage.redirect = location.href.replace('/portfolio', '');
+        window.location.replace('/portfolio');
+      }
+    </script>
   </body>
 </html>
