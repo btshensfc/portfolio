@@ -7,7 +7,7 @@ import { Provider } from "./components/ui/provider"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider>
-        <HashRouter basename="/portfolio">
+        <HashRouter>
             <AppRoutes />
         </HashRouter>
     </Provider>
