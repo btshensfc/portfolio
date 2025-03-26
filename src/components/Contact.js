@@ -29,7 +29,7 @@ export default function Contact() {
           Email
         </Link>
         <Link 
-          href="https://linkedin.com/in/yourprofile" 
+          href="https://www.linkedin.com/in/briant-shen-94a627148/" 
           color="blue.500"
           fontWeight="medium"
           _hover={{ textDecoration: 'underline' }}
@@ -39,7 +39,7 @@ export default function Contact() {
           LinkedIn
         </Link>
         <Link 
-          href="https://github.com/yourusername" 
+          href="https://github.com/btshensfc" 
           color="blue.500"
           fontWeight="medium"
           _hover={{ textDecoration: 'underline' }}
