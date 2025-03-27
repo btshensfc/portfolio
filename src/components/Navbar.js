@@ -26,8 +26,9 @@ export default function Navbar() {
           About
         </Link>
         <Link 
-          href="/resume.pdf" 
+          href="resume.pdf" 
           target="_blank" 
+          download="BriantShen_Resume.pdf"
           rel="noopener noreferrer"
           _hover={{ color: 'blue.600' }}
         >
