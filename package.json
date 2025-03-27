@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "http:/localhost:3000/portfolio",
+  "homepage": "https://btshensfc.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
