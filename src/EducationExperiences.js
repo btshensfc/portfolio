@@ -42,8 +42,8 @@ export default function EducationExperiences() {
             <Image
                 src="USF.png"
                 alt="University of San Francisco"
-                height="350px"
-                width="350px"
+                height="250px"
+                width="250px"
                 objectFit="contain"
             />
             </Box>
@@ -84,8 +84,8 @@ export default function EducationExperiences() {
             <Image
                 src="WS.png"
                 alt="Wayne State C&IT"
-                height="350px"
-                width="350px"
+                height="250px"
+                width="250px"
                 objectFit="contain"
                 pr="5"
             />
@@ -121,8 +121,8 @@ export default function EducationExperiences() {
             <Image
                 src="tq.ico"
                 alt="Teachque"
-                height="350px"
-                width="350px"
+                height="250px"
+                width="250px"
                 objectFit="contain"
                 pr="5"
             />
