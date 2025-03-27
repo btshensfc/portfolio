@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, Button } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, Button, Image } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
@@ -88,6 +88,11 @@ export default function Hero() {
           pl={{ md: 8 }}
           mt={[8, 0]}  // Added top margin on mobile
         >
+            <Image
+                src="undraw_trip_rh66.svg"
+                alt="hero image"
+                objectFit="contain"
+            />
           {/* Your illustration/image would go here */}
         </Box>
       </Flex>

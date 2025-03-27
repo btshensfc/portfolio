@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Flex, Heading, Text, Image, VStack, HStack, Icon } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import { FiCircle } from 'react-icons/fi';
-// List of your SVG files (assuming they're in public/icons/)
 const techStack = [
   { name: 'AWS', file: 'amazonwebservices.svg' },
   { name: 'Bootstrap', file: 'bootstrap.svg' },
@@ -19,7 +18,7 @@ export default function About() {
   const navigate = useNavigate();
 
   return (
-    <Box as="section" width="100%" overflowX="hidden">
+    <Box id="about" as="section" width="100%" overflowX="hidden">
       <Flex
         width="100%"
         minH="60vh"
@@ -33,10 +32,13 @@ export default function About() {
         bgGradient="linear(to-br, blue.100, white)"
       >
         <Box flex={1} width="100%" maxW={{ md: "50%" }} pl={{ md: 8 }} mt={[8, 0]}>
-          {/* Your illustration/image would go here */}
+          <Image
+            src="undraw_pair-programming_9jyg.svg"
+            alt="hero image"
+            objectFit="contain"
+          />
         </Box>
 
-        {/* Tech Stack SVGs - Replacing Buttons */}
         <Box flex={1} width="100%" maxW={{ md: "50%" }} pr={{ md: 8 }}>
           <Heading as="h1" fontSize={["6xl", "6xl"]} fontWeight="bold" mb={10}>
             What do I do? 
